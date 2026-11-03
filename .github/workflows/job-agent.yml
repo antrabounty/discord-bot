@@ -1,9 +1,10 @@
 name: Veille emploi designer graphique Lyon
 
 on:
-  schedule:
-    # Tous les jours à 6h07 UTC (7h07 l'hiver / 8h07 l'été à Lyon).
-    - cron: '7 6 * * *'
+  # Lancement manuel uniquement : la veille quotidienne passe par la conversation Claude.
+  # Pour réactiver l'exécution planifiée (avec les clés API en secrets), décommente :
+  # schedule:
+  #   - cron: '7 6 * * *'
   workflow_dispatch: {}
 
 permissions:
