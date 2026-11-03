@@ -1,0 +1,13 @@
+{
+  "name": "job-agent-lyon",
+  "version": "1.0.0",
+  "description": "Agent quotidien de veille des offres de designer graphique à Lyon",
+  "main": "src/index.js",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dry-run": "node src/index.js --dry-run",
+    "test": "node --test"
+  }
+}
